@@ -4,8 +4,9 @@
 </script>
 
 
-<input type="text" bind:value={text} placeholder="Enter text">
+<div class="flex justify-center"> 
+    <input type="text" bind:value={text} placeholder="Enter text" required >
+</div>
 <div class="flex h-screen justify-center ">
-
-    <h1 >{text}</h1>
+    <p >{text}</p>
 </div>
