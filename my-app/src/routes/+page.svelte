@@ -1,13 +1,11 @@
 <script lang="ts">
-    let count = $state(0);
+    let text = $state(" ");
 
-    function increment(){
-        count++;
-    }
 </script>
 
-<h1>{count}</h1>
 
+<input type="text" bind:value={text} placeholder="Enter text">
+<div class="flex h-screen justify-center ">
 
-<button class="text-blue-600 hover:text-blue-200 active:text-red-400 transition-all duration-200"
-onclick={increment} >Click here</button>
+    <h1 >{text}</h1>
+</div>
